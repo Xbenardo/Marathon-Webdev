@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../Marathon Reg Form/index.css" />
+        <title>Race Registration</title>
+    </head>
+    <body>
+        <header>
+            <h1>Race Registration!</h1>
+        </header>
+
+        <form
+            action="mailto:emelubens@gmail.com"
+            method="post"
+            enctype="text/plain"
+        >
+            <main>
+                <label for="first">First Name:</label>
+                <input type="text" id="first" name="firstName" required />
+
+                <label for="last">Last Name:</label>
+                <input type="text" id="last" name="LastName" required />
+            </main>
+            <br />
+
+            <!-- Race Type -->
+            <p>Select a Race:</p>
+            <div id="radio" class="radio">
+                <input
+                    type="radio"
+                    name="racetype"
+                    class="radio"
+                    value="Fun_Run"
+                />Fun Run 5k
+                <br />
+                <input
+                    type="radio"
+                    name="racetype"
+                    class="radio"
+                    value="Half_Marathon"
+                />Half Marathon
+                <br />
+                <input
+                    type="radio"
+                    name="racetype"
+                    class="radio"
+                    value="Full_Marathon"
+                />Full Marathon
+                <br />
+            </div>
+            <!-- Email  -->
+            <section>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+
+                <!-- Password -->
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required />
+            </section>
+
+            <br />
+
+            <!-- Age Group -->
+            <label for="age">Select Age Group</label>
+            <select name="age" id="age">
+                <option value="under 18">under 18</option>
+                <option value="18-30">18-30</option>
+                <option value="30 and above">30 and above</option>
+            </select>
+            <!-- Submit Button -->
+            <button type="submit">Register!</button>
+        </form>
+    </body>
+</html>
